@@ -1,16 +1,16 @@
-06c122b98b2ffc68b951ce36fb8eec48 *DESCRIPTION
+52dcdb84cde3533a34be6b00b4ecbad2 *DESCRIPTION
 dc60be9f36bbaf9685c57f1041034e2d *NAMESPACE
-2cc37f9300b6ca468e9c997f7c418d9d *R/build.R
+016076da019916057e754c834b9c7be3 *R/build.R
 30886eba2b50ab089fe1b77c4894263e *R/cplot.piano.R
 3d55531dc11712e2a021d854a683c918 *R/freq2wave.R
 0d442027ac32ca495b36f260007d4256 *R/mplot.R
-fb87267f7510eadd33776c8e6573cab2 *R/music_fn.R
+3aa817698eafa97312d48e5bea6a8940 *R/music_fn.R
 7080147cf54f0c8a61e3c25ad0c4585b *R/note2freq.R
 28cae7d743b28ce8f836128e50bbf47c *R/play.R
 90b6811f963da02f77e9f05990906748 *R/zzz.R
-4577ce5783b9f68bea4dce10bdf9fe9c *man/buildChord.Rd
+dc0e0e5a2975f4df08e16959901faa43 *man/buildChord.Rd
 21cd16421c32d6116c459d2675a63f33 *man/buildProgression.Rd
-fb763ae26e1be1a69a832d800b866f14 *man/buildScale.Rd
+dc22997dc23382a6280cfa2e35701e71 *man/buildScale.Rd
 7ac75e0455f1075e46b14bc651804bf8 *man/cplot.piano.Rd
 d0c6935bbbcda0a0bad74db1ce52d1fb *man/formatNotation.Rd
 e6d536c8da094df6e4a4eeec1f150911 *man/formatNote.Rd
@@ -25,4 +25,4 @@ e5eaa993f64bf2a7e2b31d778950310c *man/playFreq.Rd
 1193b4b975387d84ed9d1d47115fcfb2 *man/playProgression.Rd
 fbef6c1c686d533f2afb62eb7a2b60d2 *man/playWave.Rd
 e0e52501be07ef8cfd734a6c695a277f *man/strings.Rd
-78e84ad909b5d342e87b38e866cf0f70 *tests/musicTests.R
+9d189d0306b894db6da039ed3504c2d9 *tests/musicTests.R
