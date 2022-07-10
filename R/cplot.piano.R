@@ -1,6 +1,6 @@
 # cplot.piano.R
 # ::music::
-# 2019 Efstathios D. Gennatas
+# 2019 E.D. Gennatas lambdamd.org
 
 #' Console piano plot for notes
 #'
@@ -9,10 +9,11 @@
 #' @param notes String, vector: Notes to highlight. Default = \code{buildScale("C4", "minor")}
 #' @param blackKey.col Color to use for black keys. Default = "white" for use on a dark terminal.
 #' Set to "black" for use on a light terminal.
+#' 
 #' @export
 #' @examples
 #' cplot.piano(buildScale("B4", "minor"))
-#' @author Efstathios D. Gennatas
+#' @author E.D. Gennatas
 
 cplot.piano <- function(notes = buildScale("C4", "minor"),
                         blackKey.col = "white") {

@@ -1,6 +1,6 @@
 # mplot.R
 # ::music::
-# 2019 Efstathios D. Gennatas
+# 2019 E.D. Gennatas lambdamd.org
 
 #' Plot waveform
 #'
@@ -25,8 +25,9 @@
 #' @param mar Vector, length 4: Margins for \code{par}
 #' @param oma Vector, length 4: The 'oma' param of par
 #' @param ... Additional parameters to pass to \code{plot}
+#' 
 #' @export
-#' @author Efstathios D. Gennatas
+#' @author E.D. Gennatas
 
 mplot <- function(x,
                   type = "l",

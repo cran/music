@@ -1,6 +1,6 @@
 # play.R
 # ::music::
-# 2019 Efstathios D. Gennatas egenn.github.io
+# 2019 E.D. Gennatas lambdamd.org
 
 #' Minimal "Polyphonic" Wave Player
 #'
@@ -15,7 +15,7 @@
 #' playWave(freq2wave(440))
 #' }
 #' @export
-#' @author Efstathios D. Gennatas
+#' @author E.D. Gennatas
 
 playWave <- function(wave,
                      sample.rate = 44100,
@@ -31,7 +31,6 @@ playWave <- function(wave,
 
 #' Play frequency
 #'
-#' @inheritParams note2freq
 #' @param frequency Numeric, Vector: Frequency / frequencies to play
 #' @param oscillator String: "sine", "square", "saw". Default = "sine"
 #' @param duration Float: Note duration in beats. Default = 1
@@ -41,12 +40,13 @@ playWave <- function(wave,
 #' @param inner.release.time Integer: Release time, that ends on note OFF (instead of beginning at note OFF).
 #' Default = 50 (Also helps prevent popping)
 #' @param plot Logical: If TRUE, plot waveform
+#' 
 #' @examples
 #' \dontrun{
 #' playFreq(440)
 #' }
 #' @export
-#' @author Efstathios D. Gennatas
+#' @author E.D. Gennatas
 
 playFreq <- function(frequency,
                      oscillator = "sine",
@@ -57,14 +57,14 @@ playFreq <- function(frequency,
                      inner.release.time = 50,
                      plot = FALSE) {
 
-  wave <- c(mapply(freq2wave,
-                   frequency,
-                   oscillator,
-                   duration,
-                   BPM,
-                   sample.rate,
-                   attack.time,
-                   inner.release.time))
+  wave <- unlist(c(mapply(freq2wave,
+                          frequency,
+                          oscillator,
+                          duration,
+                          BPM,
+                          sample.rate,
+                          attack.time,
+                          inner.release.time)))
 
   if (plot) mplot(wave)
   playWave(wave)
@@ -84,7 +84,7 @@ playFreq <- function(frequency,
 #' playNote("B4")
 #' }
 #' @export
-#' @author Efstathios D. Gennatas
+#' @author E.D. Gennatas
 
 playNote <- function(note,
                      oscillator = "sine",
@@ -125,7 +125,7 @@ playNote <- function(note,
 #' \dontrun{
 #' playChord(buildChord("E4", "minor"))
 #' }
-#' @author Efstathios D. Gennatas
+#' @author E.D. Gennatas
 
 playChord <- function(chord,
                       type = c("harmonic", "ascending", "descending"),
@@ -169,7 +169,7 @@ playChord <- function(chord,
 #' \dontrun{
 #' playProgression(buildProgression("G4", "minor"))
 #' }
-#' @author Efstathios D. Gennatas
+#' @author E.D. Gennatas
 
 playProgression <- function(progression,
                             oscillator = c("sine", "square", "saw", "triangle"),

@@ -4,9 +4,16 @@
 \alias{playFreq}
 \title{Play frequency}
 \usage{
-playFreq(frequency, oscillator = "sine", duration = rep(1,
-  length(frequency)), BPM = 120, sample.rate = 44100,
-  attack.time = 50, inner.release.time = 50, plot = FALSE)
+playFreq(
+  frequency,
+  oscillator = "sine",
+  duration = rep(1, length(frequency)),
+  BPM = 120,
+  sample.rate = 44100,
+  attack.time = 50,
+  inner.release.time = 50,
+  plot = FALSE
+)
 }
 \arguments{
 \item{frequency}{Numeric, Vector: Frequency / frequencies to play}
@@ -35,5 +42,5 @@ playFreq(440)
 }
 }
 \author{
-Efstathios D. Gennatas
+E.D. Gennatas
 }

@@ -1,6 +1,6 @@
 # music_fn.R
 # ::music::
-# 2019 Efstathios D. Gennatas egenn.github.io
+# 2019 E.D. Gennatas lambdamd.org
 
 #' Format notes
 #'
@@ -12,9 +12,10 @@
 #' @param notes Vector, String: Input notes in the form \code{c("C4", "D4", "Eb4")}
 #' @param default.octave Integer: Octave to use if missing in \code{notes}. Default = 4; i.e. \code{"C"}
 #' becomes \code{"C4"}
+#' 
 #' @examples
 #' formatNote(c("D#4", "Ebb"))
-#' @author Efstathios D. Gennatas
+#' @author E.D. Gennatas
 #' @export
 
 formatNote <- function(notes, default.octave = 4) {
@@ -51,10 +52,11 @@ formatNote <- function(notes, default.octave = 4) {
 #' Calculates note distance in semitones
 #'
 #' @param notes String, vector: Notes in form \code{c("C4", "Eb4", "Gb4")}
+#' 
 #' @return Vector of length \code{length(notes)} with semitone distances between successive notes
 #' @examples
 #' noteDistance(strings("C4 Eb4 Gb4 Bb4"))
-#' @author Efstathios D. Gennatas
+#' @author E.D. Gennatas
 #' @export
 
 noteDistance <- function(notes) {
@@ -79,7 +81,7 @@ noteDistance <- function(notes) {
 #' @param sep String: the character that separates notes in \code{x}. Default = " "
 #' @examples
 #' strings("C4 Eb4 Gb4 Bb4")
-#' @author Efstathios D. Gennatas
+#' @author E.D. Gennatas
 #' @export
 
 strings <- function(x, sep = " ") {
@@ -106,7 +108,7 @@ strings <- function(x, sep = " ") {
 #' @param notes String, vector: Notes to format
 #' @examples
 #' formatNotation(c("Db4", "D4", "E4", "Gb4", "G4", "A4", "B4", "C5"))
-#' @author Efstathios D. Gennatas
+#' @author E.D. Gennatas
 #' @export
 
 formatNotation <- function(notes) {

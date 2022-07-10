@@ -1,6 +1,6 @@
 # note2freq.R
 # ::music::
-# 2019 Efstathios D. Gennatas
+# 2019 E.D. Gennatas lambdamd.org
 
 rt_octave <- c("C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B")
 rt_notes <- c(t(sapply(rt_octave, function(i) paste0(i, -2:8))))[-c(129:132)]
@@ -20,9 +20,10 @@ names(rt_pos) <- rt_notes
 #' @param custom.root String: Root note for just intonation (\code{tuning = "custom"}). Default = "C"
 #' @param default.octave Integer: If \code{note} is provided without octave number (e.g. "C"), default to this
 #' octave. Default = 4
+#' 
 #' @examples
 #' note2freq(buildScale("B4", "minor"))
-#' @author Efstathios D. Gennatas
+#' @author E.D. Gennatas
 #' @export
 
 note2freq <- function(note,
